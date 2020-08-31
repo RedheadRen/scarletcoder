@@ -1,0 +1,738 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   html {
+    font-size: 16px;
+}
+
+body {
+    align-items: center;
+    background: #f6f4f3;
+    color: #090b0a;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.125em;
+}
+
+header p {
+    font-size: 1em;
+}
+
+header nav ul li a {
+    font-size: 1.75em;
+}
+
+#portfolio p,
+#about p,
+#contact p,
+#contact a {
+    font-size: 1.125em;
+}
+
+#contact a {
+    color: #090b0a;
+    text-decoration-line: none;
+}
+
+footer p {
+    font-size: .875em;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.content-wrapper {
+    margin: 50px 0;
+    width: 90%;
+}
+
+/*---------- MOBILE STYLES HERE ----------*/
+
+/*****HEADER*****/
+header {
+    align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+header .content-wrapper {
+    margin: 0;
+    width: 90%;
+}
+
+header p {
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+header nav {
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+header nav ul {
+    margin: 15px 0;
+    padding: 0;
+}
+
+header nav ul li {
+    font-weight: 600;
+    list-style: none;
+    padding: 5px 0;
+}
+
+header nav ul li a {
+    color: #090b0a;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.header-img {
+    background: url("../img/hero-background.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 550px;
+}
+
+header h1 {
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 165px;
+    text-align: left;
+    width: 90%;
+}
+
+header h1 span {
+    color: #A64928;
+    font-weight: 700;
+}
+
+/*****PORTFOLIO*****/
+#portfolio {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: center;
+}
+
+#portfolio .content-wrapper {
+    margin: 20px 0;
+    width: 90%;
+}
+
+#portfolio h2 {
+    color: #A64928;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#portfolio .my-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#portfolio article {
+    width: 90%;
+}
+
+#portfolio .article-divider {
+    background: #645052;
+    height: 1px;
+    margin: 10px 0 20px 0;
+    width: 100%;
+}
+
+#portfolio p {
+    padding: 5px 0;
+}
+
+.portfolio-img {
+    border: 1px solid #645052;
+}
+
+/*****ABOUT*****/
+#about {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: center;
+    min-height: 550px;
+}
+
+#about .content-wrapper {
+    margin: 25px 0;
+    width: 90%;
+}
+
+#about h2 {
+    color: #A64928;
+    font-family: 'Source Code Pro', monospace;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#about .about-img {
+    background: url("../img/about-me.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#about p {
+    color: #090b0a;
+    line-height: 27px;
+    padding: 0px 5px;
+}
+
+/*****CONTACT*****/
+#contact {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: center;
+}
+
+#contact .content-wrapper {
+    margin: 30px 0;
+    width: 80%;
+}
+
+#contact h2 {
+    color: #A64928;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#contact .hire,
+#contact .follow,
+#contact .meet {
+    margin: 50px 0;
+}
+
+#contact p,
+#contact a {
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#contact a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact .follow .follow-icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact img {
+    padding: 5px;
+}
+
+#contact .meet img{
+    border-radius: 10px 100px / 120px;
+}
+
+/*****FOOTER*****/
+footer {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+/**Tablet styles here**/
+@media only screen and (min-width: 768px) {
+    header p {
+        font-size: 1.5em;
+    }
+    
+    header nav {
+        margin-left: 30px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    header nav ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header nav ul li {
+        padding: 5px 0;
+    }
+
+    header nav ul li a {
+        font-size: 1.875em;
+    }
+    
+    .header-img {
+        min-height: 700px;
+        width: 100%;
+    }
+    
+    header h1 {
+        font-size: 3.75em;
+        margin-top: 300px;
+    }
+
+    /*****PORTFOLIO***** & *****ABOUT***** & *****CONTACT*****/
+    #portfolio h2,
+    #about h2,
+    #contact h2 {
+        font-size: 2.5em;
+        margin: 50px 0;
+    }
+
+    #portfolio .article-divider {
+        margin: 10px 0 40px 0;
+    }
+
+    #portfolio p,
+    #about p,
+    #contact p,
+    #contact a {
+        font-size: 1.5em;
+    }
+
+    /*****CONTACT*****/
+    #contact .hire,
+    #contact .follow,
+    #contact .meet {
+        margin: 70px 0;
+    }
+
+    #contact p,
+    #conact a {
+        line-height: 50px;
+    }
+
+    #contact .follow .follow-icons {
+        margin-top: 15px;
+        margin-left: 185px;
+        width: 40%;
+    }
+
+    #contact .meet img {
+        margin-left: 140px;
+        max-width: 60%;
+    }
+
+    /*****FOOTER*****/
+    footer p {
+        font-size: 1em;
+    }
+    
+}
+
+/**Desktop styles here**/
+@media only screen and (min-width: 1200px) {
+
+    /*****HEADER*****/
+    header .content-wrapper {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header p {
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: right;
+        width: 40%;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 0 30px;
+    }
+
+    header h1 {
+        font-size: 4.5em;
+        margin-top: 200px;
+    }
+
+    /*****PORTFOLIO***** & *****ABOUT***** & *****CONTACT*****/
+    #portfolio h2,
+    #about h2,
+    #contact h2 {
+        font-size: 3em;
+    }
+
+    #portfolio p,
+    #about p,
+    #contact p,
+    #contact a {
+        font-size: 1.25em;
+    }
+
+    /*****PORTFOLIO*****/
+    #portfolio .content-wrapper{
+        margin: 40px 0;
+    }
+
+    #portfolio article {
+        margin: 0 10px;
+        text-align: justify;
+        width: 45%;
+    }
+
+    #portfolio .article-divider {
+        height: 0px;
+    }
+
+    #portfolio p {
+        margin-top: 0;
+    }
+
+    /*****CONTACT*****/
+    #contact .content-wrapper {
+        width: 90%;
+    }
+
+    #contact .content-wrapper .hire-follow {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    #contact .hire,
+    #contact .follow {
+        flex-basis: 40%;
+        margin: 0;
+    }
+
+    #contact .follow .follow-icons {
+        margin-top: 10px;
+        margin-left: 60px;
+        padding: 5px;
+        width: 60%;
+    }
+
+    #contact .meet {
+        margin: 20px 0;
+    }
+
+    #contact .meet img {
+        margin-left: 120px;
+    }
+
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
