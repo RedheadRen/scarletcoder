@@ -134,6 +134,11 @@ header nav ul li a {
     font-size: 1.125em;
 }
 
+#about a {
+    color: #a64928;
+    text-decoration: none;
+}
+
 #contact a {
     color: #090b0a;
     text-decoration-line: none;
@@ -253,8 +258,8 @@ header h1 span {
 }
 
 #portfolio .article-divider {
-    background: #645052;
-    height: 1px;
+    background: #92777a;
+    height: 2px;
     margin: 10px 0 20px 0;
     width: 100%;
 }
@@ -264,7 +269,7 @@ header h1 span {
 }
 
 .portfolio-img {
-    border: 1px solid #645052;
+    border: 2px solid #92777a;
 }
 
 /*****ABOUT*****/
@@ -471,11 +476,13 @@ footer p {
     header p {
         font-weight: 600;
         margin-left: 10px;
+        margin-top: 40px;
     }
 
     header nav {
         display: flex;
         justify-content: right;
+        margin-right: 30px;
         width: 40%;
     }
 
@@ -484,7 +491,12 @@ footer p {
     }
 
     header nav ul li {
-        margin: 0 30px;
+        margin-bottom: 0;
+    }
+
+    header nav ul li a {
+        font-size: 1.75em;
+        padding: 0 20px 0 20px;
     }
 
     header h1 {
